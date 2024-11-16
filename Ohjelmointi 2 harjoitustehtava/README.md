@@ -16,5 +16,7 @@ harjoitustyönä.
 
 ## Perustiedot
 Ohjelmointikieli: Java
+
 Visuaalinen toteutus: SceneBuilder
+
 Viimeisin muutos: 26.4.2024
