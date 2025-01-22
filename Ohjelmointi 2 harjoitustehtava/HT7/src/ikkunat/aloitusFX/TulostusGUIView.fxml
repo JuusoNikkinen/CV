@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ikkunat.aloitusFX.TulostusGUIController">
+   <center>
+      <Pane prefHeight="755.0" prefWidth="795.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="64.0" layoutY="75.0" text="Valitse tulostettavat tiedot">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="83.0" layoutY="120.0" prefHeight="531.0" prefWidth="159.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="40.3333740234375" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="41.6666259765625" minHeight="10.0" prefHeight="41.6666259765625" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <CheckBox fx:id="printAsuntoOsake" mnemonicParsing="false" text="Asunto-osake" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="printSyntymavuosi" mnemonicParsing="false" text="Henkilötunnus" GridPane.rowIndex="3" />
+                  <CheckBox fx:id="printEmail" mnemonicParsing="false" text="Sähköposti" GridPane.rowIndex="5" />
+                  <CheckBox fx:id="printPuhelinnumero" mnemonicParsing="false" text="Puhelinnumero" GridPane.rowIndex="4" />
+                  <CheckBox fx:id="printNimi" mnemonicParsing="false" text="Nimi" GridPane.rowIndex="2" />
+                  <CheckBox fx:id="printOsakeM2" mnemonicParsing="false" text="Osakkeen koko m2" GridPane.rowIndex="6" />
+                  <CheckBox fx:id="printVastike" mnemonicParsing="false" text="Yhtiövastike" GridPane.rowIndex="7" />
+                  <CheckBox fx:id="printVastikeM2" mnemonicParsing="false" text="Yhtiövastike per m2" GridPane.rowIndex="8" />
+                  <CheckBox fx:id="printVarasto" mnemonicParsing="false" text="Häkkivarasto" GridPane.rowIndex="9" />
+                  <CheckBox fx:id="printSaunaoikeus" mnemonicParsing="false" text="Saunaoikeus" GridPane.rowIndex="10" />
+                  <CheckBox fx:id="printPesutupa" mnemonicParsing="false" text="Pyykkitupaoikeus" GridPane.rowIndex="11" />
+                  <CheckBox fx:id="printHallitus" mnemonicParsing="false" text="Hallituksen jäsen" GridPane.rowIndex="12" />
+                  <CheckBox fx:id="printLiittymisvuosi" mnemonicParsing="false" text="Liittymisvuosi" GridPane.rowIndex="13" />
+               </children>
+            </GridPane>
+            <Button layoutX="135.0" layoutY="680.0" mnemonicParsing="false" onAction="#handleTulosta" text="Tulosta" />
+            <ScrollPane layoutX="316.0" layoutY="120.0" prefHeight="538.0" prefWidth="425.0">
+               <content>
+                  <TextArea fx:id="areaTuloste" prefHeight="529.0" prefWidth="415.0" />
+               </content>
+            </ScrollPane>
+            <Label layoutX="316.0" layoutY="75.0" text="Tuloste">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
